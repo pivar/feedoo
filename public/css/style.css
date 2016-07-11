@@ -1,0 +1,54 @@
+#rst-popular .rst-postinfo, .col-sm-6.rst-catpost .rst-postinfo {
+    border: 1px solid #e8ecf0;
+    padding: 16px 20px 23px;
+}
+#rst-popular .rst-postinfo h6, #rst-popular .rst-postinfo h6 a {
+  color: #2f3e42;
+  font-family: "HelveticaNeueCyrRoman";
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+  margin: 0;
+}
+.rst-postinfo time {
+  color: #a7a7a7;
+  display: block;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 8px 0 6px;
+  text-transform: uppercase;
+  word-spacing: 1px;
+}
+.rst-postinfo time i {
+    font-size: 14px;
+    margin: 0 5px 0 0;
+}
+.rst-postinfo p {
+    color: #1b1b1b;
+    font-family: "HelveticaNeueCyrRoman";
+    font-size: 14px;
+    line-height: 24px;
+}
+.rst-section-title-box h4, h2 {
+    text-align: left;
+}
+.rst-postinfo .likeArea{
+  float:right;
+  color:#599599;
+  letter-spacing: 2px;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+.rst-section-title h4, h2 {
+    border-bottom: 2px solid #ebebea;
+    color: #2f3e42;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 3px 0 32px;
+    padding: 27px 0;
+    text-align: center;
+}
