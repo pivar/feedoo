@@ -26,7 +26,8 @@ class FeedFactory {
         // return the object
         return $this->objFeeds;
       }catch(\Exception $e){
-        return array('error'=>'URL seems invalid or not working...');
+        // a basic error handling
+        return array('error'=>'XML parse issues, either invalid or not available ...');
       }
 
     }

@@ -48,8 +48,14 @@
 											 <h6><a href="{{$feed->link}}">{{$feed->title}}</a></h6>
 											 <time><i class="fa fa-clock-o"></i>{{$feed->pubDate}}</time>
 											 <p>{{$feed->description}}</p>
-											 <div class="pull-right likeArea">
-												 <i class="fa fa-heart" aria-hidden="true"><span>12</span></i>
+											 <div class="likeArea">
+												 <div class="pull-left"  id='votes-up'>
+												 <a href="#" id="up-<?php echo str_replace('http://www.bbc.co.uk/news/', '',$feed->link); ?>">
+													 <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+													 <span>0</span></a></div>
+													<div class="pull-right" id='votes-down'>
+												 	<a href="#" id='down-<?php echo str_replace('http://www.bbc.co.uk/news/', '',$feed->link); ?>'><i class="fa fa-thumbs-down" aria-hidden="true">
+														<span>0</span></i></a></div>
 												</div>
 
 										 </div>
@@ -73,8 +79,6 @@
 		</section>
 
 	<script src="{{ url('js/bootstrap.js') }}"></script>
-	<script type="text/babel" src="{{ url('js/react/error.js') }}"></script>
-	<script type="text/babel" src="{{ url('js/react/monitor.js') }}"></script>
-	<script type="text/babel" src="{{ url('js/react/app.js') }}"></script>
+	<script "text/javascript" src="{{ url('js/ajax-votes.js') }}"></script>
 </body>
 </html>

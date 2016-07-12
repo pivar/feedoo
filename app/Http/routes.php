@@ -16,3 +16,5 @@ $app->get('foo', function () {
 });
 
 $app->get('/', 'Controller@index');
+$app->post('/api/addVotesUp', 'ApiController@addVotesUp');
+$app->post('/api/addVotesDown', 'ApiController@addVotesDown');
